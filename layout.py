@@ -166,8 +166,10 @@ layout_1 = dbc.Row(
                     className="bg-dark text-white",
                 ),
                 # figure stuff
-                dcc.Graph(
-                    id="graph1",
+                dcc.Loading(
+                    id="loading_graph1",
+                    children=[dcc.Graph(id="graph1")],
+                    type="default",
                 ),
             ],
         ),
@@ -221,8 +223,10 @@ layout_1 = dbc.Row(
                     className="bg-dark text-white",
                 ),
                 # plotly figure (line chart)
-                dcc.Graph(
-                    id="line_chart",
+                dcc.Loading(
+                    id="loading_graph2",
+                    children=[dcc.Graph(id="line_chart")],
+                    type="default",
                 ),
             ],
         ),
