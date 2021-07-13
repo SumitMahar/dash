@@ -20,6 +20,7 @@ external_stylesheets = [
 ]
 
 app = dash.Dash(__name__, title="Py-Dash", external_stylesheets=external_stylesheets)
+server = app.server
 # Main layout of the app
 app.layout = html.Div(className="", children=[navbar, layout_1, layout_2])
 
