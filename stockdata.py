@@ -20,6 +20,20 @@ except:
     stock_df = pd.DataFrame()
 
 stock_df.set_index("Symbol", inplace=True)
+stock_df["Pd_date"] = pd.to_datetime(stock_df["Date"])
 
 SYMBOLS = [tic for tic in stock_df.index.unique()]
-print(SYMBOLS)
+MIN_DATE = stock_df["Pd_date"].min()
+MAX_DATE = stock_df["Pd_date"].max()
+
+# helper function for converting big digits to human readable format
+# this function is taken from stackoverflow
+def make_human_readable(num):
+    num = float("{:.3g}".format(num))
+    magnitude = 0
+    while abs(num) >= 1000:
+        magnitude += 1
+        num /= 1000.0
+    return "{}{}".format(
+        "{:f}".format(num).rstrip("0").rstrip("."), ["", "K", "M", "B", "T"][magnitude]
+    )
