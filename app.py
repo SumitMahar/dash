@@ -1,5 +1,4 @@
 import os
-from typing import Text
 
 import dash
 from dash.dependencies import Input, Output, State
@@ -62,7 +61,6 @@ def display_candlestick(ticker, value):
         xaxis_title="Date",
         xaxis_rangeslider_visible="slider" in value,
     )
-
     return fig
 
 

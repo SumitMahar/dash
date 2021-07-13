@@ -7,6 +7,7 @@ name = "pypi"
 dash = "*"
 pandas = "*"
 dash-bootstrap-components = "*"
+gunicorn = "*"
 
 [dev-packages]
 black = "*"
