@@ -5,6 +5,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 import pandas as pd
+import plotly.graph_objects as go
 
 from stockdata import SYMBOLS, MIN_DATE, MAX_DATE
 
@@ -168,7 +169,9 @@ layout_1 = dbc.Row(
                 # figure stuff
                 dcc.Loading(
                     id="loading_graph1",
-                    children=[dcc.Graph(id="graph1")],
+                    children=[
+                        dcc.Graph(id="graph1", figure=go.Figure([go.Candlestick()]))
+                    ],
                     type="default",
                 ),
             ],
@@ -225,7 +228,9 @@ layout_1 = dbc.Row(
                 # plotly figure (line chart)
                 dcc.Loading(
                     id="loading_graph2",
-                    children=[dcc.Graph(id="line_chart")],
+                    children=[
+                        dcc.Graph(id="line_chart", figure=go.Figure([go.Candlestick()]))
+                    ],
                     type="default",
                 ),
             ],
