@@ -121,6 +121,7 @@ layout_1 = dbc.Row(
     children=[
         # First col
         dbc.Col(
+            style={"height": "520px"},
             className="card-body col-md-6 my-sm-3 col-sm-12 shadow",
             children=[
                 # Div for dropdown and checklist
@@ -170,7 +171,11 @@ layout_1 = dbc.Row(
                 dcc.Loading(
                     id="loading_graph1",
                     children=[
-                        dcc.Graph(id="graph1", figure=go.Figure([go.Candlestick()]))
+                        dcc.Graph(
+                            id="graph1",
+                            figure=go.Figure([go.Candlestick()]),
+                            style={"height": "390px"},
+                        )
                     ],
                     type="default",
                 ),
@@ -178,6 +183,7 @@ layout_1 = dbc.Row(
         ),
         # 2nd col
         dbc.Col(
+            style={"height": "520px"},
             className="card-body col-md-5 my-sm-3 col-sm-12 shadow",
             children=[
                 # Div for dropdown and checklist
@@ -229,7 +235,11 @@ layout_1 = dbc.Row(
                 dcc.Loading(
                     id="loading_graph2",
                     children=[
-                        dcc.Graph(id="line_chart", figure=go.Figure([go.Candlestick()]))
+                        dcc.Graph(
+                            id="line_chart",
+                            figure=go.Figure([go.Scatter()]),
+                            style={"height": "390px"},
+                        )
                     ],
                     type="default",
                 ),
@@ -244,6 +254,7 @@ layout_2 = dbc.Row(
     children=[
         # 1st col
         dbc.Col(
+            style={"height": "520px"},
             className="card-body col-md-6 col-sm-12 shadow",
             children=[
                 # Div for dropdown options and date picker range
@@ -290,11 +301,13 @@ layout_2 = dbc.Row(
                 # Pie chart
                 dcc.Graph(
                     id="bar_graph",
+                    style={"height": "390px"},
                 ),
             ],
         ),
         # 2nd col
         dbc.Col(
+            style={"height": "520px"},
             className="card-body col-md-5 col-sm-12 shadow",
             children=[
                 html.Div(
@@ -340,6 +353,7 @@ layout_2 = dbc.Row(
                 ),
                 dcc.Graph(
                     id="pie_chart",
+                    style={"height": "390px"},
                 ),
             ],
         ),
