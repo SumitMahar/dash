@@ -66,6 +66,8 @@ def display_candlestick(ticker, value):
         xaxis_title="Date",
         xaxis_rangeslider_visible="slider" in value,
     )
+
+    fig.layout.autosize = True
     return fig
 
 
@@ -97,6 +99,7 @@ def display_line_chart(tickers, value):
         yaxis_title="Price (INR)",
         xaxis_title="Date",
         xaxis_rangeslider_visible="slider" in value,
+        # legend=dict(x=3, y=2),
     )
     return fig
 
@@ -125,14 +128,15 @@ def display_bar_graph(bar_ticker, start_date, end_date):
                 y=df["Total Traded Quantity"],
                 text=df["Total Traded Quantity"],
                 textposition="auto",
+                # orientation="h",
             ),
             go.Bar(
                 name="Deliverable",
                 x=df["Date"],
                 y=df["Deliverable Qty"],
                 text=df["Deliverable Qty"],
+                textposition="outside",
                 hovertext=df["% Dly Qt to Traded Qty"],
-                textposition="auto",
             ),
         ]
     )
@@ -141,6 +145,11 @@ def display_bar_graph(bar_ticker, start_date, end_date):
         template="plotly_dark",
         title="Total traded Qty vs Deliverable Qty",
         barmode="group",
+        bargap=0.15,
+        # uniformtext_minsize=6,
+        uniformtext_mode="hide",
+        xaxis=dict(title="Date"),
+        yaxis=dict(title="USD (millions)"),
     )
     return fig
 
@@ -173,11 +182,11 @@ def display_pie_chart(pie_tickers, date):
             pull=[0.1 if v == min(values) else 0 for v in values],
         )
     )
-
     fig.update_layout(
         template="plotly_dark",
         title=f"Turnover % and amount ( INR ) on {pd.to_datetime(date).date()}",
     )
+
     return fig
 
 
