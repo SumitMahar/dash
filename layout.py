@@ -116,11 +116,11 @@ navbar = NavbarSimple(
 
 # Layout for first 2 figures
 layout_1 = dbc.Row(
-    className="text-center m-4",
+    className="text-center m-4 justify-content-around",
     children=[
         # First col
         dbc.Col(
-            className="card card-body col-md-7 col-sm-12 shadow",
+            className="card-body col-md-6 my-sm-3 col-sm-12 shadow",
             children=[
                 # Div for dropdown and checklist
                 html.Div(
@@ -175,7 +175,7 @@ layout_1 = dbc.Row(
         ),
         # 2nd col
         dbc.Col(
-            className="card card-body col-md-5 col-sm-12 shadow",
+            className="card-body col-md-5 my-sm-3 col-sm-12 shadow",
             children=[
                 # Div for dropdown and checklist
                 html.Div(
@@ -235,11 +235,11 @@ layout_1 = dbc.Row(
 
 # Layout for last 2 figures
 layout_2 = dbc.Row(
-    className="text-center m-4 justify-content-md-center",
+    className="text-center m-4 justify-content-around",
     children=[
         # 1st col
         dbc.Col(
-            className="card card-body col-md-6 col-sm-12 shadow",
+            className="card-body col-md-6 col-sm-12 shadow",
             children=[
                 # Div for dropdown options and date picker range
                 html.Div(
@@ -259,7 +259,7 @@ layout_2 = dbc.Row(
                                     id="bar_ticker",
                                     options=options,
                                     value=options[0]["label"],
-                                    className="text-dark",
+                                    className="text-dark d-inline",
                                 ),
                                 # Div for date picker
                                 html.Div(
@@ -290,7 +290,7 @@ layout_2 = dbc.Row(
         ),
         # 2nd col
         dbc.Col(
-            className="card card-body col-md-6 col-sm-12 shadow",
+            className="card-body col-md-5 col-sm-12 shadow",
             children=[
                 html.Div(
                     [
@@ -338,5 +338,27 @@ layout_2 = dbc.Row(
                 ),
             ],
         ),
+    ],
+)
+
+
+# footer
+footer = html.Div(
+    className="bg-dark shadow text-white text-center mt-5 p-3",
+    children=[
+        dbc.NavLink(
+            [
+                html.I(className="fa fa-github mx-1"),
+                "Github",
+            ],
+            href=r"https://github.com/SumitMahar/dash",
+            className="d-inline btn btn-outline-light mx-2",
+        ),
+        dbc.NavLink(
+            [html.I(className="fa fa-linkedin-square mx-1"), "Linked In"],
+            href="https://linkedin.com/in/sumit-mahar",
+            className="d-inline btn btn-outline-info",
+        ),
+        html.P("(The dashboard is optimised for desktop or laptop!)", className="mt-2"),
     ],
 )
