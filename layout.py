@@ -183,7 +183,7 @@ layout_1 = dbc.Row(
         ),
         # 2nd col
         dbc.Col(
-            style={"height": "520px"},
+            style={"minHeight": "520px"},
             className="card-body col-md-5 my-sm-3 col-sm-12 shadow",
             children=[
                 # Div for dropdown and checklist
@@ -254,7 +254,7 @@ layout_2 = dbc.Row(
     children=[
         # 1st col
         dbc.Col(
-            style={"height": "520px"},
+            style={"minHeight": "536px"},
             className="card-body col-md-6 col-sm-12 shadow",
             children=[
                 # Div for dropdown options and date picker range
@@ -307,7 +307,7 @@ layout_2 = dbc.Row(
         ),
         # 2nd col
         dbc.Col(
-            style={"height": "520px"},
+            style={"minHeight": "536px"},
             className="card-body col-md-5 col-sm-12 shadow",
             children=[
                 html.Div(
