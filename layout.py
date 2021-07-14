@@ -259,7 +259,7 @@ layout_2 = dbc.Row(
                                     id="bar_ticker",
                                     options=options,
                                     value=options[0]["label"],
-                                    className="text-dark d-inline",
+                                    className="text-dark",
                                 ),
                                 # Div for date picker
                                 html.Div(
