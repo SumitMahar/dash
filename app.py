@@ -149,7 +149,7 @@ def display_bar_graph(bar_ticker, start_date, end_date):
         # uniformtext_minsize=6,
         uniformtext_mode="hide",
         xaxis=dict(title="Date"),
-        yaxis=dict(title="USD (millions)"),
+        yaxis=dict(title="Volume"),
     )
     return fig
 
