@@ -60,13 +60,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-* Select a stock symbol from the dropdown menu to visualize the data.
-* Use Rangeslider to go to a specific timeframe.
+* #### Select a stock symbol from the dropdown menu to visualize the data.
+* #### Use Rangeslider to go to a specific timeframe.
 
 ![Dashboard Deomo](assets/dash_demo_1.gif)
 ![Demo 3](assets/dash_demo_3.gif)
 
-### Select multiple symbols to compare the data
+* #### Select multiple symbols to compare the data
 
 ![Demo 2](assets/dash_demo_2.gif)
 
@@ -75,7 +75,7 @@
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://python.org)
-*[Dash-Plotly](dash.plot.ly)
+* [Dash-Plotly](dash.plot.ly)
 * [Bootstrap](https://getbootstrap.com)
 
 
@@ -105,7 +105,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 <!-- USAGE EXAMPLES -->
-#### Potential Future Developments 
+## Potential Future Developments 
 * Indicators for Candlestick chart
 * Daily auto-updates
 * machine learning predictions
@@ -118,11 +118,9 @@ To get a local copy up and running follow these simple example steps.
 Distributed under the MIT License. See [`LICENSE`](https://github.com/sumitmahar/dash/master/LICENSE.txt) for more information.
 
 <!-- Project Demo link -->
-#### Demo 
+## Live Demo 
 
-![Dashboard Demo](https://covid19-dash.herokuapp.com/assets/covid-dash-screencast.gif "Screencast")
-
-https://nse-dashboard.herokuapp.com/
+`https://nse-dashboard.herokuapp.com/`
 
 
 
