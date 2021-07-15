@@ -48,7 +48,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#potential-future-developments ">Usage</a></li>
+    <li><a href="#potential-future-developments ">Potential Future Developments</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#demo">Live Demo</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -60,8 +60,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-* #### Select a stock symbol from the dropdown menu to visualize the data.
-* #### Use Rangeslider to go to a specific timeframe.
+* Select a stock symbol from the dropdown menu to visualize the data.
+* Use Rangeslider to go to a specific timeframe.
 
 ![Dashboard Deomo](assets/dash_demo_1.gif)
 ![Demo 3](assets/dash_demo_3.gif)
@@ -73,7 +73,7 @@
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Major languages, frameworks and packages used:
 * [Python](https://python.org)
 * [Dash-Plotly](dash.plot.ly)
 * [Bootstrap](https://getbootstrap.com)
@@ -136,15 +136,15 @@ Project Link: [https://github.com/sumitmahar/dash](https://github.com/sumitmahar
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/sumitmahar/dash.svg?style=for-the-badge
 [contributors-url]: https://github.com/sumitmahar/dash/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/sumitmahar/dash.svg?style=for-the-badge
 [forks-url]: https://github.com/sumitmahar/dash/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/sumitmahar/dash.svg?style=for-the-badge
 [stars-url]: https://github.com/sumitmahar/dash/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/sumitmahar/dash.svg?style=for-the-badge
 [issues-url]: https://github.com/sumitmahar/dash/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/sumitmahar/dash.svg?style=for-the-badge
 [license-url]: https://github.com/sumitmahar/dash/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sumit-mahar
