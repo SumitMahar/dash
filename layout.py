@@ -121,7 +121,7 @@ layout_1 = dbc.Row(
     children=[
         # First col
         dbc.Col(
-            style={"height": "520px"},
+            style={"minHeight": "520px"},
             className="card-body col-md-6 my-sm-3 col-sm-12 shadow",
             children=[
                 # Div for dropdown and checklist
